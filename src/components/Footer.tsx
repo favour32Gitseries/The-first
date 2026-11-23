@@ -67,7 +67,6 @@ export function Footer() {
                     className="inline-flex items-center gap-1 text-[#EFE6D5]/80 transition-colors hover:text-[#2DD4BF]"
                   >
                     <span>{social.name}</span>
-                    <span className="text-[#EFE6D5]/45">({social.handle})</span>
                     <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
                   </a>
                 </li>

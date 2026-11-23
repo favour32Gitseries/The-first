@@ -185,14 +185,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
 ];
 
 export const CONTACT_INFO = {
-  email: 'hello@nhenyevisuals.com',
-  phone: '+1 (404) 555-0194',
-  location: '742 Edgewood Ave SE, Studio 4B, Atlanta, GA',
-  hours: 'Mon – Fri · 9:00 AM – 6:30 PM EST',
+  email: 'azolikesaviour@gmail.com',
+  phone: '07026703324',
+  location: 'Nsukka, Enugu State, Nigeria',
+  hours: 'Mon – Fri · 9:00 AM – 6:30 PM',
   socials: [
-    { name: 'Instagram', handle: '@nhenyevisuals', href: 'https://instagram.com' },
-    { name: 'YouTube', handle: 'Nhenye Visuals TV', href: 'https://youtube.com' },
-    { name: 'Behance', handle: 'nhenyevisuals', href: 'https://behance.net' },
-    { name: 'TikTok', handle: '@nhenyevisuals', href: 'https://tiktok.com' },
+    { name: 'Instagram', href: 'https://instagram.com' },
+    { name: 'YouTube', href: 'https://youtube.com' },
+    { name: 'Behance', href: 'https://behance.net' },
+    { name: 'TikTok', href: 'https://tiktok.com' },
   ],
 };

@@ -14,22 +14,30 @@ interface FormValues {
 
 type FormErrors = Partial<Record<keyof FormValues, string>>;
 
+const NGN_BUDGET_OPTIONS = [
+  '₦50,000 – ₦150,000',
+  '₦150,000 – ₦350,000',
+  '₦350,000 – ₦750,000',
+  '₦750,000 – ₦1,500,000',
+  '₦1,500,000+',
+];
+
+const USD_BUDGET_OPTIONS = [
+  '$1,500 – $3,000',
+  '$3,000 – $7,500',
+  '$7,500 – $15,000',
+  '$15,000+',
+];
+
 const INITIAL_VALUES: FormValues = {
   name: '',
   email: '',
   phone: '',
   serviceType: 'Videography',
   preferredDate: '',
-  budgetRange: '$3,000 – $7,500',
+  budgetRange: NGN_BUDGET_OPTIONS[1],
   projectDetails: '',
 };
-
-const BUDGET_OPTIONS = [
-  '$1,500 – $3,000',
-  '$3,000 – $7,500',
-  '$7,500 – $15,000',
-  '$15,000+',
-];
 
 function getTodayLocalDateString(): string {
   const now = new Date();
@@ -246,7 +254,7 @@ export function BookingForm() {
                   id="nv-phone"
                   type="tel"
                   autoComplete="tel"
-                  placeholder="+1 (404) 555-0192"
+                  placeholder="07026703324"
                   value={values.phone}
                   onChange={(e) => handleChange('phone', e.target.value)}
                   aria-invalid={Boolean(errors.phone)}
@@ -321,13 +329,22 @@ export function BookingForm() {
                   id="nv-budget"
                   value={values.budgetRange}
                   onChange={(e) => handleChange('budgetRange', e.target.value)}
-                  className={`${inputBaseClass} border-[#EFE6D5]/15`}
+                  className={`${inputBaseClass} [color-scheme:dark] border-[#EFE6D5]/15`}
                 >
-                  {BUDGET_OPTIONS.map((range) => (
-                    <option key={range} value={range}>
-                      {range}
-                    </option>
-                  ))}
+                  <optgroup label="NGN (₦)">
+                    {NGN_BUDGET_OPTIONS.map((range) => (
+                      <option key={range} value={range}>
+                        {range}
+                      </option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="USD ($)">
+                    {USD_BUDGET_OPTIONS.map((range) => (
+                      <option key={range} value={range}>
+                        {range}
+                      </option>
+                    ))}
+                  </optgroup>
                 </select>
               </div>
             </div>
