@@ -153,8 +153,8 @@ export const STUDIO_STATS: StudioStat[] = [
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    id: 'nenye-saviour',
-    name: 'Nenye Saviour',
+    id: 'nenye-azolike',
+    name: 'Nenye Azolike',
     role: 'Founder',
     discipline: 'Directing · Brand Strategy',
     bio: 'Leads visual storytelling and commercial directing, turning raw brand ideas into unforgettable motion campaigns.',
@@ -175,12 +175,12 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 'favour-nicole',
     name: 'Favour Nicole',
-    role: 'Head of Graphics',
-    discipline: 'Identity · Packaging & Print',
-    bio: 'Builds expressive typographic systems, tactile print collateral, and bold campaign graphics with zero visual clutter.',
-    photoSrc: '/assets/aistudio/Graphics_621ce25d.jpeg',
-    photoPosition: 'object-[46%_56%]',
-    accentNote: 'Grid breaker',
+    role: 'Editor-in-Chief',
+    discipline: 'Editorial Direction · Publicity Copy',
+    bio: 'Guides campaign narratives, editorial voice, and story structure—ensuring every film, feature, and brand release lands with clarity and impact.',
+    photoSrc: '/assets/aistudio/Editor-in-chief_302264d1.jpeg',
+    photoPosition: 'object-[49%_34%]',
+    accentNote: 'Story architect',
   },
 ];
 

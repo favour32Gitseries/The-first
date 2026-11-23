@@ -64,7 +64,7 @@ export function AboutSection() {
               Meet the crew behind the lens
             </h3>
             <p className="text-sm text-[#EFE6D5]/70">
-              Directors, photographers &amp; designers working under one roof.
+              Directors, photographers &amp; editors working under one roof.
             </p>
           </div>
 
