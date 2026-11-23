@@ -1,0 +1,6 @@
+{
+  "name": "Nhenye Visuals",
+  "description": "Media and publicity creative brand specializing in videography, photography, and graphic design. Capturing stories. Amplifying brands.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
